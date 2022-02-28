@@ -1,0 +1,144 @@
+<!-- text -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/a35444adb2.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <!--A standard command for mobile scale. -->
+    <title>Fabio de Pinho Portfolio Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- fonts -->
+    <!-- Update these with your own fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/port1style.css">
+
+    </head>
+    
+    <!-- Starting with the top -->
+    
+    <body>
+        <header>
+            <div class="logo">
+                <!-- Logo in the top left -->
+                <img src="img/tiranofabiorex.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <!-- Hamburguer button -->
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <!-- Dont worry about redundancy -->
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#interests" class="nav__link">Career Interests</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#project" class="nav__link">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+<!------------------------------------------------------------------------------------------------ Model -->
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <!-- Long class name to make obvius what im doing -->
+                Banished with <strong> My SQL and PowerBI </strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">A simple analysis on Banished food production</p>
+            <img src="img/1.png" alt="" class="intro__img">
+        </section>
+
+        <div class="portfolio-item-individual">
+            <p>Banished is a city-building video game developed by Shining Rock Software. It was released for Microsoft Windows on
+            February 18, 2014. The game focuses on careful resource management and survival as an isolated and growing society. Its
+            gameplay can be compared with economic theory on sustainability and optimization.</p>
+            <p class="">You can listen the soundtrack game here :)</p>
+            <audio preload="" controls="controls">
+                <source src="audio/banished.mp3" type="audio/mp3" />
+                seu navegador não suporta HTML5
+            </audio>
+            <img src="img/banished/banished.jpg" alt="">
+            <p>Therefore, food is one of the most important factors to store in the game, so that citizens do not starve. Food can be
+            produced in: Fishing dock, Crop fields, Orchards, Gatherers, Pastures and Hunting Cabins.</p>
+            <p>In my current progress, we are in year 32, with a population of 233 citizens. <br>
+            The image below represents all items stocked in my game. Among them are: work tools, skins, food, seeds, roots, etc...</p>
+            <img src="img/banished/Inventory (all itens).png" alt="">
+            <p>However, you can see a little problem here, there is no way to see how much and type of food each area produces; food is
+            organized by quantity only.</p>
+            <br>
+            <h3>This will be our exercise: capturing the data, processing it, and analyzing it using MySQL and PowerBI</h3>
+            <br>
+            <h4>1) Introduction: capturing data.</h4>
+            <p>In this initial process, the types of data captured were organized across workers, workplaces, and items.</p>
+            <!-- <img src="img/banished/Works quantititive (169 works).png" alt="" class="teste"> -->
+            <img src="img/banished/brutal data tables.png" alt="" class="teste">
+            <h5>Important note: ignore the "ids" present in this handcrafted table image.</h5>
+  
+            <h4>2) Development: processing data.</h4>
+            <p>The data processing area is the most technical among the stages. I created an ER diagram sketch using DrawIO to
+            reproduce it as a model in MySQL. Don't forget that every file is available on my GitHub.</p>
+            <img src="img/banished/erdiagramdraw.png" alt="">
+            <img src="img/banished/erdiagram.png" alt="">
+            <p>Our script is ready. Finally, we must add the data to the tables, this process can be overwhelming.</p>
+            <img src="img/banished/sqlscriptex.png" alt="">
+            <br>
+            <h4>3) Conclusion: analysis using PowerBI.</h4>
+            <p>Now that we have our database ready, we can create a presentation using PowerBI. By opening the program, we can easily
+            import the tables. Below, you will see the result of this project.</p>
+            <iframe width="630" height="315" src="https://www.youtube.com/embed/INunzO2hCOc" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <img src="img/banished/banishedpower.png" alt="">
+            <p>To our king, I can emphasize the importance of focusing on the creation of more fishing and pasture posts. These two
+            workplaces represent, respectively, more than 90% of all food production in this city.</p>
+            <p>Also, I would recommend disabling the locations: crop field and orchard; they are extremely unproductive and have many
+            allocated workers.</p>
+            <p>Thanks for following along, this is a simple project I thought of while playing. It was extremely fun to create, and
+            it's clearly a big help for future saves when playing Banished.</p>
+            <p></p>
+
+
+
+        </div>
+
+<!------------------------------------------------------------------------------------------------ Model -->
+
+
+<!--- FOOTER  -->
+        <footer class="footer">
+            <a href="mailto:fabio.gabrielxzzz@gmail.com " class="footer__link">My e-mail
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/tiranofabiorex">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/fabio-de-pinho-545071224/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/tiran0fabiorex/">
+                        <i class="fab fa-instagram"></i>
+        
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        <script src="js/index.js"></script> <!-- JavaScript call -->
+        
+        </body>
+        
+        
+        </html>
