@@ -398,11 +398,12 @@ header {
   ;
 }
 
-.about-me__img:hover {
+/* If you want an animation on "who i am" img, just enable everything below*/
+/* .about-me__img:hover {
       transform: scale(1.2);
       opacity: 1;
   ;
-}
+} */
 /* *********************playing with the WHO I AM IMAGE  **************************/
 
 @media (min-width: 600px) {
@@ -438,8 +439,7 @@ header {
 
 .about-me__body {
   text-align: justify;
-  text-align: center;
-  
+  max-width: 500px;
 }
 
 }
