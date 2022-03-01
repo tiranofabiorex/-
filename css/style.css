@@ -436,6 +436,12 @@ header {
     z-index: 2;
   }
 
+.about-me__body {
+  text-align: justify;
+  text-align: center;
+  
+}
+
 }
 
 /* For finish, i will put my projects below*/
@@ -444,6 +450,7 @@ header {
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
+  
 }
 
 .section__subtitle--project {
